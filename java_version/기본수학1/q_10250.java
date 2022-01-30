@@ -1,0 +1,21 @@
+package java_version.기본수학1;
+
+import java.util.Scanner;
+
+//호텔 층수, 너비, 입장순서별 호수 지정하기
+public class q_10250 {
+    public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int T = in.nextInt();
+		for(int i = 0; i < T; i++) {
+			int H = in.nextInt();
+			int W = in.nextInt();
+			int N = in.nextInt();
+			if(N % H == 0) {
+				System.out.println((H * 100) + (N / H));
+			} else {
+				System.out.println(((N % H) * 100) + ((N / H) + 1));
+			}
+		}
+	}
+}
