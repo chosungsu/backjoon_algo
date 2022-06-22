@@ -17,13 +17,13 @@ public class q_10816 {
         // 3. 서치할 카드갯수 읽기
         int m = Integer.parseInt(br.readLine());
         int num;
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        st = new StringTokenizer(br.readLine());
         StringBuilder sb = new StringBuilder();
         // 4. 숫자 비교
         for (int i = 0; i < m; ++i) {
             num = Integer.parseInt(st.nextToken());
             sb.append(
-                (upper(cards, key) - lower(cards, key))
+                (upper(cards, num) - lower(cards, num))
                 + " "
             );
         }
@@ -32,7 +32,7 @@ public class q_10816 {
     }
     private static int lower(int[] cards, int key) {
 		int left = 0; 
-		int right = cards.length - 1; 
+		int right = cards.length; 
  
 		while (left < right) {
  
@@ -41,7 +41,7 @@ public class q_10816 {
             // 찾고자 하는 값이 중간값보다 작을 때
             // 우측 밴드를 중간값으로 변경
 			if (key <= cards[mid]) {
-				right = mid - 1;
+				right = mid;
 			}
             // 좌측 밴드를 중간값 + 1로 변경
 			else {
@@ -55,7 +55,7 @@ public class q_10816 {
  
 	private static int upper(int[] cards, int key) {
 		int left = 0; 
-		int right = cards.length - 1; 
+		int right = cards.length; 
  
 		while (left < right) {
  
@@ -64,7 +64,7 @@ public class q_10816 {
 			// 찾고자 하는 값이 중간값보다 작을 때
             // 우측 밴드를 중간값으로 변경
 			if (key < cards[mid]) {
-				right = mid - 1;
+				right = mid;
 			}
 			// 좌측 밴드를 중간값 + 1로 변경
 			else {
