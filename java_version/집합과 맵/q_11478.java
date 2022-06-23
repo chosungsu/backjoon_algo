@@ -2,21 +2,21 @@ import java.io.*;
 import java.util.*;
 
 public class q_11478 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(
-            new InputStreamReader(System.in));
-        String s = br.readLine();
+    static HashSet<String> set;
 
-        HashSet<String> set = new HashSet<>();
-        for (int i = 0; i <= s.length(); i++) {
-            for (int j = 0; j <= s.length(); j++) {
-                set.add(s.substring(i, j));
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        set = new HashSet<>();
+
+        String name = "";
+        for(int i = 0; i <= s.length(); i++) {
+            name = "";
+            for (int j = 0; j < s.length(); j++) {
+                name += s.substring(j, j+1);
+                set.add(name);
             }
         }
-        
-        StringBuilder sb = new StringBuilder();
-        sb.append(set.size());
-        System.out.println(sb.toString());
-        br.close();
+        System.out.println(set.size());
     }
 }
