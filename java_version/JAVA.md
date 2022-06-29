@@ -9,8 +9,8 @@ public class Main {
     int x = in.nextInt();
     # 방법2
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-		int x = Integer.parseInt(st.nextToken());
+    StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+    int x = Integer.parseInt(st.nextToken());
   }
 }
 ```
