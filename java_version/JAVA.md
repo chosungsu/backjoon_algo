@@ -51,3 +51,29 @@ public class Main {
   }
 }
 ```
+
+## for 문제의 핵심 코드
+```java
+import java.io.*;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    if(first == second && first == third && second == third){
+        System.out.print(10000+(first*1000));
+    }
+    else if(first == second || first == third)
+	  {
+		  System.out.print(1000+(first*100));
+	  }
+	  else if(second == third)
+	  {
+      System.out.print(1000+(second*100));
+	  }
+	  else
+	  {
+		  System.out.print((Math.max(first, Math.max(second, third))*100));
+	  }
+  }
+}
+```
