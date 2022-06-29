@@ -17,3 +17,15 @@ public class Main {
   }
 }
 ```
+
+## 배열 문제의 핵심 코드
+```java
+import java.io.*;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Arrays.sort(arr);
+  }
+}
+```
