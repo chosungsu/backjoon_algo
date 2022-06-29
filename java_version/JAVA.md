@@ -52,7 +52,7 @@ public class Main {
 }
 ```
 
-## for 문제의 핵심 코드
+## if 문제의 핵심 코드
 ```java
 import java.io.*;
 import java.util.*;
