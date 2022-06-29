@@ -2,6 +2,9 @@
 
 ## 초반 입력값 읽기 코드
 ```java
+import java.io.*;
+import java.util.*;
+
 public class Main {
   public static void main(String[] args) {
     # 방법1
