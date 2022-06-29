@@ -59,6 +59,11 @@ import java.util.*;
 
 public class Main {
   public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int first = sc.nextInt();
+    int second = sc.nextInt();
+    int third = sc.nextInt();
+    
     if(first == second && first == third && second == third){
         System.out.print(10000+(first*1000));
     }
@@ -74,3 +79,22 @@ public class Main {
   }
 }
 ```
+
+
+## while 문제의 핵심 코드
+```java
+import java.io.*;
+import java.util.*;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    while (sc.hasNextInt()) {
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        System.out.println(x + y);
+    }
+  }
+}
+```
+
