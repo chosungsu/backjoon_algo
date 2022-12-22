@@ -1,3 +1,3 @@
-x = int(input())
-for i in range(1, (x + 1)) :
-    print(" " * (x - i) + "*" * i)
+n = int(input())
+for i in range(1, (n + 1)) :
+    print(" " * (n - i) + "*" * i)
