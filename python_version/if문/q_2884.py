@@ -1,7 +1,7 @@
-hh, mm = map(int, input().split())
-if mm >= 45 :
-    print(hh, (mm - 45))
-elif mm < 45 and hh > 0 :
-    print((hh - 1), (mm + 15))
+h, m = map(int, input().split())
+if m >= 45 :
+    print(h, (m - 45))
+elif m < 45 and h > 0 :
+    print((h - 1), (m + 15))
 else :
-    print(23, (mm + 15))
+    print(23, (m + 15))
