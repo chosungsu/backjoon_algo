@@ -1,7 +1,7 @@
 num = int(input())
 for i in range(num):
-    num_sec, s = input().split()
+    num_cnt, string = input().split()
     text = ''
-    for i in s:
-        text += int(num_sec) * i
+    for s in string:
+        text += int(num_cnt) * s
     print(text)

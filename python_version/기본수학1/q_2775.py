@@ -1,10 +1,9 @@
-a = int(input())
-for i in range(a) :
-    #floor : 층, num : 호
+t = int(input())
+for i in range(t) :
     floor = int(input())
     num = int(input())
-    fo = [x for x in range(1, num + 1)]
+    num_list = [x for x in range(1, num + 1)]
     for j in range(floor) :
-        for k in range(1, num) :
-            fo[k] += fo[k - 1]
-    print(fo[-1])
+        for k in range(1, len(num_list)) :
+            num_list[k] += num_list[k - 1]
+    print(num_list[-1])

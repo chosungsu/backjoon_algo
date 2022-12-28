@@ -1,6 +1,3 @@
-all_list = list(range(2,246912))
-memo = []
-n = int(input())
 def sosu(n):
     if n == 1:
         return False
@@ -8,18 +5,20 @@ def sosu(n):
         if n%i==0:
             return False
     return True
-
+#입력값의 2배 범위를 리스트화
+all_list = list(range(2,246912))
+#전체 범위 내의 소수를 미리 리스트에 담기
+memo = []
 for i in all_list:
     if sosu(i):
         memo.append(i)
-
 while True:
     count=0
+    n = int(input())
     #0일 때 멈춤
     if n == 0 :
         break
-    for i in memo:			#memo리스트 중에서
-        if n < i <=2*n:		#입력한 값의 범위 내에서 값이 있으면
-            count+=1		#있을 때 마다 카운트 +1
+    for i in memo:
+        if n < i <=2*n:
+            count+=1
     print(count)
-    n = int(input())		#0 입력받기 전까지 계속 해야하므로 입력 받음

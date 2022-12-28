@@ -1,11 +1,10 @@
 a = int(input())
+arr = []
 for i in range(a):
-    b = input()
-    #s : b를 리스트에 담기
-    s = list(b)
+    arr = list(input())
     sum = 0
     cnt = 1
-    for i in s:
+    for i in arr:
         if i == 'O':
             sum += cnt
             cnt += 1

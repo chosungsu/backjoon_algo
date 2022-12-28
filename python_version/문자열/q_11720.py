@@ -1,4 +1,4 @@
-n = input()
+n = int(input())
 nums = input()
 total = 0
 for i in nums :
