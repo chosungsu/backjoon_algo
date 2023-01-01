@@ -1,8 +1,3 @@
-#변수 생성
-stars = ["***", "* *", "***"]
-n = int(input())
-k = 0
-# 별들을 만들 함수
 def get_stars(n):
     # 별들을 담을 리스트
     Temp = [] 
@@ -14,13 +9,15 @@ def get_stars(n):
         else:
             Temp.append(n[i % len(n)] * 3)    
     return Temp
+stars = ["***", "* *", "***"]
+n = int(input())
+k = 0
 # 만약 n이 3이 될 때 까지 n은 3으로 나눠준 값을 
 # 다시 n값으로 지정하고 k는 1씩 추가
 while n != 3:
     n = int(n / 3)
     # k는 함수를 몇번 실행할지 정하는 변수 
     k += 1
-
 for i in range(k):
     stars = get_stars(stars)
 for i in stars:

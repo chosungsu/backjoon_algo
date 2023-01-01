@@ -10,6 +10,8 @@ def binary_search(num):
         else:
             left = mid + 1
     return 0
+import sys
+input = sys.stdin.readline
 # 상근이가 가지고 있는 숫자카드 개수 읽기
 n = int(input())
 # 상근이의 수 읽기
@@ -17,7 +19,7 @@ card = list(map(int, input().split()))
 # 정렬하기
 card.sort()
 # 서치할 카드 수 읽기
-input()
+m = int(input())
 # 서치할 수 읽고 이진법 서치 돌리기
 for num in list(map(int, input().split())):
     print(binary_search(num), end = ' ')
